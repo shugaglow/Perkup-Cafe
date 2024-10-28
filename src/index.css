@@ -1,0 +1,456 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;1,300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto Mono", sans-serif;
+  color: #1e1e1e;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.header{
+  width: 100%;
+  height: auto;
+
+}
+.container {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4.8rem;
+  
+}
+
+/* *************** */
+
+Nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #584402;
+  padding: 16px 100px;
+}
+
+.logo{
+  width: fit-content;
+  height: auto;
+}
+
+.logo h2{
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.menu-buttons{
+  width: fit-content;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  column-gap: 1rem;
+}
+
+.menu-buttons a{
+  background-color: #fff;
+  color: #252525;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  font-size: 16px;
+  outline: none;
+  text-decoration: none;
+}
+
+.menu-buttons a:hover{
+  background-color: #f8cb37;
+  color: #fff;
+}
+
+
+.hero{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+}
+
+.hero h2{
+  font-size: 32px;
+  color: #f3bb05;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.hero p{
+  font-size: 18px;
+  text-align: center;
+  margin-block-start: 2rem;
+}
+
+/* *************** */
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+  background-color: #fff;
+}
+
+.menu h2 {
+  display: inline-block;
+  padding: 1rem 0;
+  border-bottom: 2px solid currentColor;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 500;
+}
+
+.menu > p {
+  font-size: 1.5rem;
+  text-align: center;
+  line-height: 1.6;
+  width: 80%;
+}
+
+.coffees {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-self: center;
+  column-gap: 4rem;
+  flex-wrap: wrap;
+  row-gap: 8rem;
+  margin-block-start: 4rem;
+  padding: 1.5rem 8rem;
+}
+
+
+.coffees img {
+  width: 30rem;
+  height: 25rem;
+  border-radius: 1rem;
+  margin-block-end: 1rem;
+}
+
+.coffee{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  width: 30%;
+  height: auto;
+  padding: 4rem;
+  border-radius: 2rem;
+  background-color: #fff;
+  border: 1px solid #584402;
+}
+
+.coffee:hover{
+  background-color: #f3e3b0;
+}
+
+.coffee h3 {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-block-end: 1rem;
+}
+
+.coffee p {
+  font-size: 1.4rem;
+  font-weight: 400;
+  font-style: italic;
+  margin-bottom: auto;
+  margin-block-end: 1rem;
+}
+
+.coffee span {
+  display: block;
+  font-size: 1.6rem;
+}
+
+.coffee.sold-out {
+  color: #424242;
+}
+
+.coffee.sold-out img {
+  filter: grayscale();
+  opacity: 0.8;
+}
+
+.price span{
+  color: #1e1e1e;
+  font-size: 800;
+}
+
+/* *************** */
+
+
+.order {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.4rem;
+}
+
+.btn {
+  color: inherit;
+  font-family: inherit;
+  border: none;
+  font-size: 1.5rem;
+  font-weight: 500;
+  background-color: #584402;
+  color: #fff;
+  padding: 1.4rem 3.2rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  width: 100%;
+  margin-block-start: 1rem;
+  border-radius: 1rem;
+}
+
+.btn:hover {
+  background-color: #816404;
+}
+
+
+
+
+
+.footer {
+  background-color: #584402;
+  color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: start;
+  width: 100%;
+  padding: 1.5rem 8rem;
+}
+
+.footer__copyright {
+  text-align: center;
+  width: 100%;
+  font-size: 0.9rem;
+  color: #fff;
+}
+
+@media screen and (max-width: 1024px) {
+  .coffees img {
+    width: 28rem;
+    height: 25rem;
+  }
+  
+  .coffee{
+    width: 40%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  
+  Nav {
+    padding: 1.5rem 3rem;
+  }
+
+  .hero{
+    padding: 6rem 3rem;
+  }
+
+
+  .coffees img {
+    width: 23rem;
+    height: 20rem;
+  }
+  
+  .coffee{
+    width: 44%;
+    height: auto;
+    padding: 2rem
+  }
+
+
+  .footer {
+    padding: 2rem;
+  }
+}
+
+@media screen and (max-width: 430px) {
+
+  Nav {
+    padding: 1.5rem 2rem;
+  }
+
+  .menu-buttons a{
+    padding: 1rem;
+    font-size: 14px;
+  }
+
+  
+.hero{
+  padding: 4rem 2rem;
+}
+
+.hero h2{
+  font-size: 28px;
+}
+
+.hero p{
+  font-size: 16px;
+  text-align: center;
+  margin-block-start: 2rem;
+}
+
+.coffees {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+}
+
+  .coffees img {
+    width: 25rem;
+    height: 20rem;
+  }
+  
+  .coffee{
+    width: 100%;
+    height: auto;
+    padding: 2rem
+  }
+
+  .footer {
+    padding: 2rem;
+  }
+
+}
+
+@media screen and (max-width: 390px) {
+
+  Nav {
+    padding: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .logo h2{
+    font-size: 16px;
+  }
+
+  .menu-buttons a{
+    padding: 1rem;
+    font-size: 14px;
+  }
+
+  
+.hero{
+  padding: 4rem 2rem ;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero h2{
+  font-size: 28px;
+}
+
+.hero p{
+  font-size: 16px;
+  text-align: center;
+  margin-block-start: 2rem;
+  padding-left: 2rem;
+}
+
+.coffees {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  padding: 2rem;
+}
+
+  .coffees img {
+    width: 32rem;
+    height: 30rem;
+  }
+  
+  .coffee{
+    width: 100%;
+    height: auto;
+    padding: 2rem;
+  }
+
+  .footer {
+    padding: 2rem;
+  }
+
+}
+
+@media screen and (max-width: 360px) {
+
+  Nav {
+    padding: 1.5rem 2rem;
+    width: 100%;
+  }
+
+  .menu-buttons a{
+    padding: 1rem;
+    font-size: 14px;
+  }
+
+  
+.hero{
+  padding: 4rem 2rem;
+}
+
+.hero h2{
+  font-size: 28px;
+}
+
+.hero p{
+  font-size: 16px;
+  text-align: center;
+  margin-block-start: 2rem;
+}
+
+  .coffees img {
+    width: 25rem;
+    height: 20rem;
+  }
+  
+  .coffee{
+    width: 100%;
+    height: auto;
+    padding: 2rem
+  }
+
+  .footer {
+    padding: 2rem;
+  }
+
+}
+
+
